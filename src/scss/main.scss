@@ -1,0 +1,14 @@
+@import 'src/scss/variables';
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #f0f0f0;
+}
+
+.center-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 95vw;
+	max-height: 95vh;
+}
