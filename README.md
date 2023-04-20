@@ -3,7 +3,7 @@
 
 # Age Calculator
 
-The Age Calculator is a simple web application that calculates a person's age based on their birth date. Users can input their birth date, and the app will display their age in year![Uploading edhwnh0nvy7vyhejeccf.jpg…]()
+The Age Calculator is a simple web application that calculates a person's age based on their birth date. Users can input their birth date, and the app will display their age in year!
 s, months, and days.
 
 ## Technologies Used
