@@ -1,4 +1,4 @@
-![Group 48095676](https://user-images.githubusercontent.com/32004431/233442797-a2cd3d68-890c-4e80-81a9-07ed1e588e26.jpg)
+![Group 48095678](https://user-images.githubusercontent.com/32004431/233443759-7332250f-506e-490a-afef-9cf24194b4ad.jpg)
 
 
 # Age Calculator
