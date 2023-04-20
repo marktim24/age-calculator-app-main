@@ -1,6 +1,9 @@
+![edhwnh0nvy7vyhejeccf](https://user-images.githubusercontent.com/32004431/233442392-8ecc4f31-267b-4856-83e7-2a93e63adc62.jpg)
+
 # Age Calculator
 
-The Age Calculator is a simple web application that calculates a person's age based on their birth date. Users can input their birth date, and the app will display their age in years, months, and days.
+The Age Calculator is a simple web application that calculates a person's age based on their birth date. Users can input their birth date, and the app will display their age in year![Uploading edhwnh0nvy7vyhejeccf.jpg…]()
+s, months, and days.
 
 ## Technologies Used
 
