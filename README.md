@@ -22,6 +22,26 @@ The Age Calculator application consists of several React components, as well as 
 - **AgeCalculator**: The main component that combines all other components and manages the state and logic of the application.
 - **useAgeCalculator**: A custom hook that handles form input, validation, and age calculation.
 
+## Features
+
+- **useState hook:**
+  The Age Calculator App utilizes React's useState hook to manage component state, allowing the app to respond to user input and update the user interface accordingly.
+
+- **Custom hook:**
+  The app implements a custom hook, useAgeCalculator.js, which encapsulates the age calculation logic and state management. This custom hook makes the code more modular and easier to maintain.
+
+- **Responsive design:**
+  The app's layout and styling are optimized for various screen sizes using media queries in SCSS. This ensures a consistent and user-friendly experience across different devices.
+
+- **Form validation:**
+  The app includes input validation to ensure that users provide valid date values for their date of birth. Error messages are displayed to guide users in correcting any input mistakes.
+
+- **SCSS structure:**
+  The SCSS files are organized in a modular fashion, with separate files for variables and each component. This structure allows for better maintainability and ease of customization.
+
+- **Vite:**
+  The project uses Vite as the build tool and development server, providing a fast and efficient development experience.
+
 ## Project Setup and Development
 
 To set up the project locally and start the development server, follow these steps:
