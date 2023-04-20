@@ -58,6 +58,22 @@ const useAgeCalculator = () => {
 		}))
 	}
 
+	const handleKeyDown = event => {
+		if (event.key === 'Enter') {
+			event.preventDefault()
+
+			const inputs = ['day', 'month', 'year']
+			const currentInputIndex = inputs.indexOf(event.target.id)
+
+			if (currentInputIndex !== -1 && currentInputIndex < inputs.length - 1) {
+				const nextInput = document.getElementById(inputs[currentInputIndex + 1])
+				nextInput.focus()
+			} else {
+				handleSubmit(event)
+			}
+		}
+	}
+
 	const handleSubmit = event => {
 		event.preventDefault()
 
@@ -96,7 +112,8 @@ const useAgeCalculator = () => {
 		errors,
 		calculatedAge,
 		handleChange,
-		handleSubmit
+		handleSubmit,
+		handleKeyDown
 	}
 }
 

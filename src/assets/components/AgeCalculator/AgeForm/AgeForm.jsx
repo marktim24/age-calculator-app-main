@@ -2,7 +2,13 @@ import React from 'react'
 import InputForm from '../InputForm/InputForm'
 import styles from '/src/assets/components/AgeCalculator/AgeCalculator.module.scss'
 
-const AgeForm = ({ inputData, handleChange, handleSubmit, errors }) => (
+const AgeForm = ({
+	inputData,
+	handleChange,
+	handleSubmit,
+	handleKeyDown,
+	errors
+}) => (
 	<form className={styles.form} onSubmit={handleSubmit}>
 		<InputForm
 			label='DAY'
@@ -10,6 +16,7 @@ const AgeForm = ({ inputData, handleChange, handleSubmit, errors }) => (
 			placeholder='DD'
 			value={inputData.dayProperty}
 			onChange={event => handleChange('dayProperty', event.target.value)}
+			onKeydown={handleKeyDown}
 			error={errors.dayError}
 		/>
 		<InputForm
@@ -18,14 +25,16 @@ const AgeForm = ({ inputData, handleChange, handleSubmit, errors }) => (
 			placeholder='MM'
 			value={inputData.monthProperty}
 			onChange={event => handleChange('monthProperty', event.target.value)}
+			onKeydown={handleKeyDown}
 			error={errors.monthError}
 		/>
-		<InputForm	
+		<InputForm
 			label='YEAR'
 			id='year'
 			placeholder='YYYY'
 			value={inputData.yearProperty}
 			onChange={event => handleChange('yearProperty', event.target.value)}
+			onKeydown={handleKeyDown}
 			error={errors.yearError}
 		/>
 	</form>

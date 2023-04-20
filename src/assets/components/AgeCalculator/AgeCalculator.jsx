@@ -5,8 +5,14 @@ import OutputForm from './OutputForm/OutputForm'
 import useAgeCalculator from './useAgeCalculator'
 
 const AgeCalculator = () => {
-	const { inputData, errors, calculatedAge, handleChange, handleSubmit } =
-		useAgeCalculator()
+	const {
+		inputData,
+		errors,
+		calculatedAge,
+		handleChange,
+		handleSubmit,
+		handleKeyDown
+	} = useAgeCalculator()
 
 	return (
 		<div className={styles.calculator}>
@@ -14,6 +20,7 @@ const AgeCalculator = () => {
 				inputData={inputData}
 				handleChange={handleChange}
 				handleSubmit={handleSubmit}
+				handleKeyDown={handleKeyDown}
 				errors={errors}
 			/>
 			<CalculateButton onClick={handleSubmit} />
