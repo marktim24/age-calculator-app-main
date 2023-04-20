@@ -1,5 +1,5 @@
 ![edhwnh0nvy7vyhejeccf](https://user-images.githubusercontent.com/32004431/233442392-8ecc4f31-267b-4856-83e7-2a93e63adc62.jpg)
-![edhwnh0nvy7vyhejeccf](https://user-images.githubusercontent.com/32004431/233442478-9d1c2d36-4f0e-4ac0-98f7-dafa5e8f9b39.jpg)
+![cgw08h6powt1zmotfx3q](https://user-images.githubusercontent.com/32004431/233442539-0040aa85-0372-4352-bdfd-81a7f6a8d42f.jpg)
 
 # Age Calculator
 
