@@ -24,13 +24,15 @@ const useAgeCalculator = () => {
 		let monthError = ''
 		let yearError = ''
 
-		if (year < 1) {
-			yearError = 'Please enter a valid year.'
+		const currentYear = new Date().getFullYear()
+
+		if (isNaN(year) || year < 1 || year >= currentYear) {
+			yearError = 'Please enter a valid year in the past.'
 		}
-		if (month < 1 || month > 12) {
+		if (isNaN(month) || month < 1 || month > 12) {
 			monthError = 'Please enter a valid month.'
 		}
-		if (day < 1 || day > 31) {
+		if (isNaN(day) || day < 1 || day > 31) {
 			dayError = 'Please enter a valid day.'
 		} else {
 			const monthLengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]

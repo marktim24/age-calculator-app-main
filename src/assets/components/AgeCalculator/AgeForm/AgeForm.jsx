@@ -11,7 +11,7 @@ const AgeForm = ({ inputData, handleChange, handleSubmit, errors }) => (
 			value={inputData.dayProperty}
 			onChange={event => handleChange('dayProperty', event.target.value)}
 			error={errors.dayError}
-			labelClassName={errors.dayError ? styles.error : ''}
+			labelClassName={errors.dayError}
 		/>
 		<InputForm
 			label='MONTH'
@@ -20,7 +20,7 @@ const AgeForm = ({ inputData, handleChange, handleSubmit, errors }) => (
 			value={inputData.monthProperty}
 			onChange={event => handleChange('monthProperty', event.target.value)}
 			error={errors.monthError}
-			labelClassName={errors.monthError ? styles.error : ''}
+			labelClassName={errors.monthError}
 		/>
 		<InputForm
 			label='YEAR'
@@ -29,7 +29,7 @@ const AgeForm = ({ inputData, handleChange, handleSubmit, errors }) => (
 			value={inputData.yearProperty}
 			onChange={event => handleChange('yearProperty', event.target.value)}
 			error={errors.yearError}
-			labelClassName={errors.yearError ? styles.error : ''}
+			labelClassName={errors.yearError}
 		/>
 	</form>
 )
