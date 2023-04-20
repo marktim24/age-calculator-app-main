@@ -11,6 +11,8 @@ This project was built using the following technologies:
 3. **Sass** - A preprocessor scripting language that extends CSS, allowing for more advanced features and better code organization.
 4. **GitHub Pages** - A platform for hosting static websites directly from GitHub repositories.
 
+# The site is live at https://marktim24.github.io/age-calculator-app-main/
+
 ## React Components and Functions
 
 The Age Calculator application consists of several React components, as well as custom hooks for handling form input and validation:
