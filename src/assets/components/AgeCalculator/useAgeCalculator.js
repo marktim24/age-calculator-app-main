@@ -26,6 +26,14 @@ const useAgeCalculator = () => {
 
 		const currentYear = new Date().getFullYear()
 
+		year = parseInt(year, 10)
+
+		if (year >= 0 && year <= currentYear % 100) {
+			year += 2000
+		} else if (year > currentYear % 100 && year <= 99) {
+			year += 1900
+		}
+
 		if (isNaN(year) || year < 1 || year >= currentYear) {
 			yearError = 'Please enter a valid year in the past.'
 		}
@@ -48,7 +56,10 @@ const useAgeCalculator = () => {
 
 		setErrors({ dayError, monthError, yearError })
 
-		return dayError === '' && monthError === '' && yearError === ''
+		return {
+			isValid: dayError === '' && monthError === '' && yearError === '',
+			updatedYear: year
+		}
 	}
 
 	const handleChange = (property, value) => {
@@ -78,10 +89,16 @@ const useAgeCalculator = () => {
 		event.preventDefault()
 
 		const { dayProperty, monthProperty, yearProperty } = inputData
-		if (!validateDate(dayProperty, monthProperty, yearProperty)) {
+		const validation = validateDate(dayProperty, monthProperty, yearProperty)
+		if (!validation.isValid) {
 			return
 		}
-		const birthday = new Date(yearProperty, monthProperty - 1, dayProperty)
+
+		const birthday = new Date(
+			validation.updatedYear,
+			monthProperty - 1,
+			dayProperty
+		)
 		const currentDate = new Date()
 
 		let years = currentDate.getFullYear() - birthday.getFullYear()
